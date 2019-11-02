@@ -36,7 +36,7 @@ class App extends Component {
 
     getProductInfo(productIdParam) {
         const productId = productIdParam ? productIdParam : this.state.listing_id;
-        axios.get(`http://ec2-18-224-213-224.us-east-2.compute.amazonaws.com/api/listing/${productId}`)
+        axios.get(`http://ec2-3-17-60-230.us-east-2.compute.amazonaws.com/api/listing/${productId}`)
             .then(({ data }) => {
                 if (data.type !== 'Error') {
                     this.setState({
